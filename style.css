@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primaria: #1B1F3B;
+    --secundaria: #00FFD1;
+    --fundo: #F9F9F9;
+    --texto: #333;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--fundo);
+    color: var(--texto);
+    line-height: 1.6;
+}
+
+header {
+    background: var(--primaria);
+    color: white;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.8rem;
+}
+
+header p {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: var(--secundaria);
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: var(--secundaria);
+}
+
+.hero {
+    background: linear-gradient(to right, #00FFD1, #00B3FF);
+    padding: 4rem 2rem;
+    text-align: center;
+    color: #000;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 1.5rem;
+    background: var(--primaria);
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background: #12162c;
+}
+
+main {
+    padding: 3rem 2rem;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h2 {
+    font-size: 2rem;
+    color: var(--primaria);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+article {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.05);
+}
+
+.inscricao {
+    text-align: center;
+    background: #E0F7FA;
+    padding: 3rem 1rem;
+    margin-top: 4rem;
+    border-top: 3px solid var(--secundaria);
+}
+
+footer {
+    background: var(--primaria);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 4rem;
+}
+
+footer a {
+    color: var(--secundaria);
+    text-decoration: none;
+}
